@@ -90,10 +90,7 @@ async def get_groups() -> list:
 
 #==================================================#
 
-r = redis.Redis(
-	port=6378,
-	host="127.0.0.1"
-	)
+r = redis.from_url("redis://default:hzETAuS6vkUy7LZwgcB84G44jDMwgDik@redis-13813.c289.us-west-1-2.ec2.cloud.redislabs.com:13813")
 	
 r.set(f"{bot_id}_owner",owner)
 
