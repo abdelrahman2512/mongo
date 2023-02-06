@@ -1,0 +1,15 @@
+{
+  "logo":"https://g.top4top.io/p_23787w6g31.jpg",
+  "name": "session",
+  "description": "dev coder.",
+  "env": {
+    "TOKEN": {
+      "description": "Enter bot token Get It From @botfather.",
+      "required"true,
+      "value": ""
+    }
+  },
+  "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+  }]
+}
